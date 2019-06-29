@@ -1,0 +1,23 @@
+site_name: Data Blog
+docs_dir: blog
+use_directory_urls: false
+
+nav:
+  - Introduction: index.md
+  - Converted Notebook:
+    - Yelp: predict_review_five_star_rating.md
+  - Source: source.md
+
+theme:
+  name: 'material'
+  language: 'en'
+  font: 'Lato'
+
+plugins:
+  - search
+
+markdown_extensions:
+  - codehilite
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.smartsymbols

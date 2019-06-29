@@ -1,0 +1,794 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Yelp - Data Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700|">
+        <style>body,input{font-family:"","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#case-study" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="Data Blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Data Blog
+            </span>
+            <span class="md-header-nav__topic">
+              Yelp
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="Data Blog" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Data Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Converted Notebook
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Converted Notebook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="predict_review_five_star_rating.html" title="Yelp" class="md-nav__link md-nav__link--active">
+      Yelp
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="source.html" title="Source" class="md-nav__link">
+      Source
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><em>SOURCE: https://nbviewer.jupyter.org/github/xun-tang/pyladies_jupyter_demo/blob/master/Predict_Review_Five_Star_Rating.ipynb</em></p>
+<h1 id="case-study">Case study</h1>
+<p>Given a user’s past reviews on Yelp (available from yelp-challenge dataset),</p>
+<p>When the user writes a review for a business she hasn't reviewed before,</p>
+<p>How likely will it be a Five-Star review?</p>
+<ul>
+<li>Load data</li>
+<li>Visualize the data</li>
+<li>Featurize the data</li>
+<li>Join tables to populate the features</li>
+<li>Model the data: Logistic regression</li>
+<li>Evaluate the model</li>
+<li>Make prediction with the model</li>
+</ul>
+<h1 id="load-data">Load data</h1>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+
+<span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;/scratch/xun/docs/yelp_dataset_challenge_academic_dataset/&#39;</span>
+<span class="n">biz_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">PATH</span> <span class="o">+</span> <span class="s1">&#39;yelp_academic_dataset_business.csv&#39;</span><span class="p">)</span>
+<span class="n">user_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">PATH</span> <span class="o">+</span> <span class="s1">&#39;yelp_academic_dataset_user.csv&#39;</span><span class="p">)</span>
+<span class="n">review_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">PATH</span> <span class="o">+</span> <span class="s1">&#39;yelp_academic_dataset_review.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">review_df</span> <span class="o">=</span> <span class="n">review_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;review_id&#39;</span><span class="p">)</span>
+<span class="n">user_df</span> <span class="o">=</span> <span class="n">user_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;user_id&#39;</span><span class="p">)</span>
+<span class="n">biz_df</span> <span class="o">=</span> <span class="n">biz_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;business_id&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<h1 id="visualize-the-data">Visualize the data</h1>
+<h2 id="example-plot-distribution-of-review-star-ratings">Example: Plot distribution of review star ratings</h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="c1"># Set context to &quot;talk&quot; for figure aesthetics </span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="s2">&quot;talk&quot;</span><span class="p">)</span>
+<span class="c1"># set plot figure size to larger</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">,</span> <span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">8</span><span class="p">)},</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;stars&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">review_df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+<span class="c1"># Removing spines</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="predict_review_five_star_rating_files/predict_review_five_star_rating_7_0.png" /></p>
+<h2 id="example-plot-review-star-ratings-by-year">Example: Plot review star ratings by year</h2>
+<div class="codehilite"><pre><span></span><span class="n">review_df</span><span class="p">[</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">review_df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">])</span>
+<span class="n">review_df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">review_df</span><span class="p">[</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">review_df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;stars&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="predict_review_five_star_rating_files/predict_review_five_star_rating_9_0.png" /></p>
+<h1 id="featurize-the-data">Featurize the data</h1>
+<ul>
+<li>Convert date string to date delta</li>
+<li>For example, business_age</li>
+<li>Convert strings to categorical features</li>
+<li>For example, noise level: quiet, loud, very loud.</li>
+<li>Drop unused features</li>
+<li>For example, business_name</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">calculate_date_delta</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">from_column</span><span class="p">,</span> <span class="n">to_column</span><span class="p">):</span>
+    <span class="n">datetime</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">from_column</span><span class="p">])</span>
+    <span class="n">time_delta</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">to_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_delta</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">from_column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">to_length</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">from_column</span><span class="p">,</span> <span class="n">to_column</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">to_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">from_column</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">from_column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">drop_columns</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">to_boolean</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
+        <span class="n">to_column</span> <span class="o">=</span> <span class="n">column</span><span class="o">+</span><span class="s1">&#39;_bool&#39;</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">to_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">FILL_WITH</span> <span class="o">=</span> <span class="mf">0.0</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">to_category</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+        <span class="c1"># add FILL_WITH category for fillna() to work w/o error</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">FILL_WITH</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="p">):</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">add_categories</span><span class="p">([</span><span class="n">FILL_WITH</span><span class="p">])</span>
+        <span class="c1">#print &#39;categories for &#39;, column, &#39; include &#39;, df[column].cat.categories</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">category_rename_to_int</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">remove_unused_categories</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="p">)</span>
+        <span class="c1">#print &#39;column &#39;, column, &#39; has &#39;, size, &#39; columns, include &#39;, df[column].cat.categories</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">rename_categories</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        <span class="c1">#print &#39;becomes &#39;, df[column].cat.categories</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">calculate_date_delta</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">review_df</span><span class="p">,</span> <span class="n">from_column</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="n">to_column</span><span class="o">=</span><span class="s1">&#39;date_delta&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">to_length</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">review_df</span><span class="p">,</span> <span class="n">from_column</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">to_column</span><span class="o">=</span><span class="s1">&#39;text_len&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">drop_columns</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">review_df</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;datetime&#39;</span><span class="p">])</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">review_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">calculate_date_delta</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">user_df</span><span class="p">,</span> <span class="n">from_column</span><span class="o">=</span><span class="s1">&#39;yelping_since&#39;</span><span class="p">,</span> <span class="n">to_column</span><span class="o">=</span><span class="s1">&#39;date_delta&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">to_length</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">user_df</span><span class="p">,</span> <span class="n">from_column</span><span class="o">=</span><span class="s1">&#39;friends&#39;</span><span class="p">,</span> <span class="n">to_column</span><span class="o">=</span><span class="s1">&#39;friends_count&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">to_length</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">user_df</span><span class="p">,</span> <span class="n">from_column</span><span class="o">=</span><span class="s1">&#39;elite&#39;</span><span class="p">,</span> <span class="n">to_column</span><span class="o">=</span><span class="s1">&#39;elite_count&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">drop_columns</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">user_df</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">])</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">user_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">drop_columns</span><span class="p">(</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">biz_df</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;city&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;full_address&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;state&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;categories&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;longitude&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;latitude&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;neighborhoods&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Monday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Monday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Tuesday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Tuesday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Wednesday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Wednesday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Thursday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Thursday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Friday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Friday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Saturday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Saturday.close&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Sunday.open&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;hours.Sunday.close&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">to_cat_columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;attributes.Ambience.casual&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Attire&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Alcohol&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Noise Level&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Smoking&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Wi-Fi&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.Ages Allowed&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;attributes.BYOB/Corkage&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">to_category</span><span class="p">(</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">biz_df</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">to_cat_columns</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">biz_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">FILL_WITH</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">category_rename_to_int</span><span class="p">(</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">biz_df</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">to_cat_columns</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<h1 id="join-tables-to-populate-the-features">Join tables to populate the features</h1>
+<p>Join three tables (review, biz, user) to one (review-with-all-info).
+Each join is a many-to-one join.</p>
+<div class="codehilite"><pre><span></span><span class="c1"># The `user_df` DataFrame is already indexed by the join key (`user_id`). Make sure it&#39;s on the right side of join.</span>
+<span class="n">review_join_user</span> <span class="o">=</span> <span class="n">review_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="n">lsuffix</span><span class="o">=</span><span class="s1">&#39;_review&#39;</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s1">&#39;_user&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">review_join_user_join_biz</span> <span class="o">=</span> <span class="n">review_join_user</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">biz_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;business_id&#39;</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s1">&#39;_biz&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">drop_columns</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">review_join_user_join_biz</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;business_id&#39;</span><span class="p">])</span>
+</pre></div>
+
+
+<h1 id="identify-data-x-and-target-y">Identify data X and target y</h1>
+<p>Data X: all features we gathered from business, user, and review tables.</p>
+<p>Target y: what we'd like to predict: Whether the review is Five-star or not.</p>
+<div class="codehilite"><pre><span></span><span class="c1"># target y is whether a review is five-star</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">review_join_user_join_biz</span><span class="o">.</span><span class="n">stars</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># We&#39;ve already dropped not informative features data X</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">review_join_user_join_biz</span>
+<span class="n">review_join_user_join_biz</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;stars&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># get the feature names - this will be useful for the model visualization and feature analysis</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+
+
+<h1 id="split-training-set-and-testing-set">Split training set and testing set</h1>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># Split the data into a training set and a test set</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="k">print</span> <span class="s1">&#39;training data shape&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span>
+<span class="k">print</span> <span class="s1">&#39;test data shape&#39;</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
+<span class="k">print</span> <span class="s1">&#39;converted label data shape&#39;</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span>
+<span class="c1">#print &#39;features&#39;, features</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">training</span> <span class="k">data</span> <span class="n">shape</span> <span class="p">(</span><span class="mi">1668909</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+<span class="n">test</span> <span class="k">data</span> <span class="n">shape</span> <span class="p">(</span><span class="mi">556304</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+<span class="n">converted</span> <span class="n">label</span> <span class="k">data</span> <span class="n">shape</span> <span class="p">(</span><span class="mi">1668909</span><span class="p">,)</span>
+</pre></div>
+
+
+<h1 id="model-the-data-logistic-regression">Model the data: Logistic regression</h1>
+<p>Logistic regression estimates the probability of a binary response based on one or more features.</p>
+<p>Here we estimate the probability of a review being five-star.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+
+<span class="c1"># Standardize features by removing the mean and scaling to unit variance</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="c1"># Function used to print cross-validation scores</span>
+<span class="k">def</span> <span class="nf">training_score</span><span class="p">(</span><span class="n">est</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="p">):</span>
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">est</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+    <span class="n">roc</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">est</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;roc_auc&#39;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;5-fold Train CV | Accuracy:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">acc</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span><span class="s1">&#39;+/-&#39;</span><span class="p">,</span> \
+    <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">acc</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span><span class="s1">&#39;| ROC AUC:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">roc</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;+/-&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">roc</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">linear_model</span>
+
+<span class="c1"># Build model using default parameter values</span>
+<span class="n">lrc</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LogisticRegression</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
+
+<span class="c1"># cross-validation </span>
+<span class="n">cv</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">n_folds</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1"># print cross-validation scores</span>
+<span class="n">training_score</span><span class="p">(</span><span class="n">est</span><span class="o">=</span><span class="n">lrc</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="mi">5</span><span class="o">-</span><span class="n">fold</span> <span class="n">Train</span> <span class="n">CV</span> <span class="o">|</span> <span class="n">Accuracy</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">754</span> <span class="o">+/-</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">|</span> <span class="n">ROC</span> <span class="n">AUC</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">824</span> <span class="o">+/-</span> <span class="mi">0</span><span class="p">.</span><span class="mi">001</span>
+</pre></div>
+
+
+<h1 id="evaluation-via-confusion-matrix">Evaluation via Confusion Matrix</h1>
+<p>False positive (upper right).</p>
+<p>False negative (bottom left)</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Compute confusion matrix</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+
+<span class="k">def</span> <span class="nf">plot_confusion_matrix</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Confusion matrix&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Blues</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;True label&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted label&#39;</span><span class="p">)</span>
+
+<span class="c1"># Run classifier</span>
+<span class="n">lrc_fit</span> <span class="o">=</span> <span class="n">lrc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">lrc_fit</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1"># Normalize the confusion matrix by row (i.e by the number of samples in each class)</span>
+<span class="n">cm_normalized</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="n">cm</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Normalized confusion matrix&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cm_normalized</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plot_confusion_matrix</span><span class="p">(</span><span class="n">cm_normalized</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Normalized confusion matrix&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="nv">Normalized</span> <span class="nv">confusion</span> <span class="nv">matrix</span>
+[[ <span class="mi">0</span>.<span class="mi">83402455</span>  <span class="mi">0</span>.<span class="mi">16597545</span>]
+ [ <span class="mi">0</span>.<span class="mi">36468911</span>  <span class="mi">0</span>.<span class="mi">63531089</span>]]
+
+
+<span class="o">/</span><span class="nv">nail</span><span class="o">/</span><span class="nv">home</span><span class="o">/</span><span class="nv">xun</span><span class="o">/</span><span class="nv">venv</span><span class="o">/</span><span class="nv">ipynb</span><span class="o">/</span><span class="nv">local</span><span class="o">/</span><span class="nv">lib</span><span class="o">/</span><span class="nv">python2</span>.<span class="mi">7</span><span class="o">/</span><span class="nv">site</span><span class="o">-</span><span class="nv">packages</span><span class="o">/</span><span class="nv">matplotlib</span><span class="o">/</span><span class="nv">collections</span>.<span class="nv">py</span>:<span class="mi">590</span>: <span class="nv">FutureWarning</span>: <span class="nv">elementwise</span> <span class="nv">comparison</span> <span class="nv">failed</span><span class="c1">; returning scalar instead, but in the future will perform elementwise comparison</span>
+  <span class="k">if</span> <span class="nv">self</span>.<span class="nv">_edgecolors</span> <span class="o">==</span> <span class="nv">str</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">face</span><span class="s1">&#39;</span><span class="ss">)</span>:
+</pre></div>
+
+
+<p><img alt="png" src="predict_review_five_star_rating_files/predict_review_five_star_rating_48_2.png" /></p>
+<h1 id="make-prediction-with-the-model">Make prediction with the model</h1>
+<p>Randomly pick an anonymous user from the dataset.</p>
+<p>Example: Predict whether the user will give a business a Five-star rating.</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">predict_given_user_biz</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">biz</span><span class="p">,</span> <span class="n">biz_name</span><span class="p">):</span>
+    <span class="n">a_user</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">a_biz</span> <span class="o">=</span> <span class="n">biz</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="p">{</span>
+        <span class="s1">&#39;review_count&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stars&#39;</span><span class="p">,</span>
+    <span class="p">}:</span>
+        <span class="n">a_biz</span><span class="p">[</span><span class="n">column</span><span class="o">+</span><span class="s1">&#39;_biz&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_biz</span><span class="p">[</span><span class="n">column</span><span class="p">]</span>
+        <span class="n">a_biz</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="p">{</span>
+        <span class="s1">&#39;date_delta&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;votes.funny&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;votes.useful&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;votes.cool&#39;</span><span class="p">,</span>
+    <span class="p">}:</span>
+        <span class="n">a_user</span><span class="p">[</span><span class="n">column</span><span class="o">+</span><span class="s1">&#39;_user&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_user</span><span class="p">[</span><span class="n">column</span><span class="p">]</span>
+        <span class="n">a_user</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">a_X_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">a_user</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a_biz</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+    <span class="n">a_X_test</span><span class="p">[</span><span class="s1">&#39;review_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;xun_on_postino-arcadia-phoenix&#39;</span>
+    <span class="n">a_X_test</span> <span class="o">=</span> <span class="n">a_X_test</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;review_id&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="p">{</span>
+        <span class="s1">&#39;votes.cool_review&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;votes.funny_review&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;votes.useful_review&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;date_delta_review&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;text_len&#39;</span><span class="p">,</span>
+    <span class="p">}:</span>
+        <span class="n">a_X_test</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">a_X_test</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0.0&#39;</span>
+    <span class="c1"># XXX(xun): fix this</span>
+    <span class="n">a_X_test</span><span class="p">[</span><span class="s1">&#39;attributes.BYOB/Corkage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="c1">#a_X_test</span>
+    <span class="n">a_X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">a_X_test</span><span class="p">)</span>
+    <span class="n">a_y_pred</span> <span class="o">=</span> <span class="n">lrc_fit</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">a_X_test_scaled</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;prediction for user &#39;</span><span class="p">,</span> <span class="n">a_user</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39; on business &#39;</span><span class="p">,</span> <span class="n">biz_name</span><span class="p">,</span> <span class="s1">&#39; is &#39;</span><span class="p">,</span> <span class="n">a_y_pred</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">a_user</span> <span class="o">=</span> <span class="n">user_df</span><span class="p">[</span><span class="n">user_df</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="s1">&#39;HcOguFNyg9jNkNpTBD2D3g&#39;</span><span class="p">]</span>
+<span class="n">a_user</span><span class="o">.</span><span class="n">review_count</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">user_id</span>
+<span class="n">HcOguFNyg9jNkNpTBD2D3g</span>    <span class="mi">4</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">review_count</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">a_biz</span> <span class="o">=</span> <span class="n">biz_df</span><span class="p">[</span><span class="n">biz_df</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="s1">&#39;SDwYQ6eSu1htn8vHWv128g&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<h1 id="httpswwwyelpcombizpostino-arcadia-phoenix">https://www.yelp.com/biz/postino-arcadia-phoenix</h1>
+<p><img src="postino-arcadia-phoenix.png" alt="postino-arcadia-phoenix" width="800"></p>
+<div class="codehilite"><pre><span></span><span class="n">predict_given_user_biz</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">a_user</span><span class="p">,</span> <span class="n">biz</span><span class="o">=</span><span class="n">a_biz</span><span class="p">,</span> <span class="n">biz_name</span><span class="o">=</span><span class="s2">&quot;Postino Arcadia Phoenix&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="nv">prediction</span> <span class="k">for</span> <span class="nv">user</span>  <span class="nv">HcOguFNyg9jNkNpTBD2D3g</span>  <span class="nv">on</span> <span class="nv">business</span>  <span class="nv">Postino</span> <span class="nv">Arcadia</span> <span class="nv">Phoenix</span>  <span class="nv">is</span>  <span class="nv">True</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">another_user</span> <span class="o">=</span> <span class="n">user_df</span><span class="p">[</span><span class="n">user_df</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="s1">&#39;o625WyBtvJ_G3s0FRr6RmQ&#39;</span><span class="p">]</span>
+<span class="n">another_user</span><span class="o">.</span><span class="n">review_count</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">user_id</span>
+<span class="n">o625WyBtvJ_G3s0FRr6RmQ</span>    <span class="mi">10</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">review_count</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">another_biz</span> <span class="o">=</span> <span class="n">biz_df</span><span class="p">[</span><span class="n">biz_df</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="s1">&#39;1n0n_-Iz0e3iVpH8sereiA&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<h1 id="httpswwwyelpcombizport-authority-of-allegheny-county-pittsburgh">https://www.yelp.com/biz/port-authority-of-allegheny-county-pittsburgh</h1>
+<p><img src="port-authority-of-allegheny-county-pittsburgh.png" alt="port-authority-of-allegheny-county-pittsburgh" width="800"></p>
+<div class="codehilite"><pre><span></span><span class="n">predict_given_user_biz</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">a_user</span><span class="p">,</span> <span class="n">biz</span><span class="o">=</span><span class="n">another_biz</span><span class="p">,</span> <span class="n">biz_name</span><span class="o">=</span><span class="s2">&quot;Postino Arcadia Phoenix&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="nv">prediction</span> <span class="k">for</span> <span class="nv">user</span>  <span class="nv">HcOguFNyg9jNkNpTBD2D3g</span>  <span class="nv">on</span> <span class="nv">business</span>  <span class="nv">Postino</span> <span class="nv">Arcadia</span> <span class="nv">Phoenix</span>  <span class="nv">is</span>  <span class="nv">True</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">predict_given_user_biz</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">another_user</span><span class="p">,</span> <span class="n">biz</span><span class="o">=</span><span class="n">another_biz</span><span class="p">,</span> <span class="n">biz_name</span><span class="o">=</span><span class="s2">&quot;Port Authority of Allegheny County&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="nv">prediction</span> <span class="k">for</span> <span class="nv">user</span>  <span class="nv">o625WyBtvJ_G3s0FRr6RmQ</span>  <span class="nv">on</span> <span class="nv">business</span>  <span class="nv">Port</span> <span class="nv">Authority</span> <span class="nv">of</span> <span class="nv">Allegheny</span> <span class="nv">County</span>  <span class="nv">is</span>  <span class="nv">False</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="index.html" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="source.html" title="Source" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Source
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
